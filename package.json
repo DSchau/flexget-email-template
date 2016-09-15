@@ -1,0 +1,24 @@
+{
+  "name": "flexget-email-template",
+  "version": "1.0.0",
+  "description": "Email template for flexget",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build/juice.js",
+    "template": "python ./build/template.py;",
+    "preserve": "npm run build && npm run template",
+    "serve": "node build/server.js"
+  },
+  "keywords": [],
+  "author": "Dustin Schau <dustinschau@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "/Users/dschau6.4.1",
+    "browser-sync": "~2.16.0",
+    "fs-promise": "~0.5.0",
+    "juice": "~2.0.0",
+    "mkdirp-promise": "~3.0.1",
+    "node-sass": "~3.9.3",
+    "postcss": "/Users/dschau5.2.0"
+  }
+}
