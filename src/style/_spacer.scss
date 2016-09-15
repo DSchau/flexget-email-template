@@ -1,0 +1,14 @@
+$background-color: mix(white, black, 30%);
+
+.spacer {
+  width: 100%;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  display: block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(rgba(darken(blue, 40%), 0.2), rgba($background-color, 0) 60%);
+  .message {
+    font-size: 24px;
+  }
+}

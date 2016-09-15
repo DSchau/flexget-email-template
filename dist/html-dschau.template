@@ -1,0 +1,65 @@
+{% if task.accepted -%}
+
+{# Global variables #}
+{% set unique_list = [] %}
+{% set tv_shows = [] %}
+{% set movies = [] %}
+{% set dates = [] %}
+{% set ratings = {0: '', 1: '★', 2: '★★', 3: '★★★', 4: '★★★★', 5: '★★★★★'} %}
+
+{% for entry in task.accepted %}
+  {% if entry.series_name|default(false) %}
+    {% set unique_id = '%s %s'|format( entry.series_name|re_replace("'|\.|\"", '')|lower, entry.series_id ) %}
+    {% if unique_id not in unique_list %}
+      {% if unique_list.append(unique_id) or tv_shows.append(entry) or dates.append(entry.rss_pubdate|default(now)) %}{% endif %}
+    {% endif %} 
+  {% else %}
+    {% set unique_id = entry.imdb_name|default('Undefined') %}
+    {% if unique_id not in unique_list %}
+      {% if unique_list.append(unique_id) or movies.append(entry) or dates.append(entry.rss_pubdate|default(now)) %}{% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% set tv_shows = tv_shows|sort(attribute='series_name') %}
+{% set movies = movies|sort(attribute='imdb_name') %}
+
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexget Newsletter</title>
+<style type="text/css">body, table, td, a {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important; }
+</style></head><body style="background-color: #f6f6f6; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width: 100%;">
+  <div class="container" style="display: block; Margin: 0 auto; max-width: 580px; width: auto;">
+    {% if tv_shows|d(false) %}
+      <div class="show spacer" style="width: 100%; height: 150px; line-height: 150px; text-align: center; display: block; padding: 0.5rem 1rem; background: linear-gradient(rgba(0,0,51,0.2), rgba(77,77,77,0) 60%);">
+        <h3 class="message" style="color: #000000; font-family: sans-serif; font-weight: 400; margin: 0; font-size: 24px;">The episodes you may have missed&hellip;</h3>
+      </div>
+    {% endif %}
+    {% for show in tv_shows %}
+      <section class="show content" style="max-width: 95%; margin: 0 auto;">
+        <img src="{{show.tvdb_posters[0]}}" style="border: 0; height: auto; max-width: 100%; line-height: 100%; outline: none; text-decoration: none; max-height: 200px; display: block; margin: 0 auto;">
+        <h1 class="title" style="color: #000000; font-family: sans-serif; font-weight: 300; font-size: 35px; text-transform: capitalize; margin: 0; padding: 0; text-align: center;">{{show.tvdb_ep_name}}</h1>
+        <p class="description" style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px; line-height: 24px;">{{show.tvdb_ep_overview}}</p>
+      </section>
+    {% endfor %} <!-- end shows -->
+
+    {% for movie in movies %}
+      <section class="movie content" style="max-width: 95%; margin: 0 auto;"></section>
+    {% endfor %} <!-- end movies -->
+  </div>
+</body>
+</html>
+{% endif %}

@@ -7,15 +7,11 @@ section {
     margin: 0 auto;
   }
   .title {
-    float: left;
     margin: 0;
     padding: 0;
-  }
-  .ep-title {
-    margin: 0;
-    padding: 0;
+    text-align: center;
   }
   .description {
-    clear: both;
+    line-height: 24px;
   }
 }

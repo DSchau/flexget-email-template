@@ -47,7 +47,7 @@ module.exports = mkdirp(path.resolve('./dist'))
     return $.html();
   })
   .then((inlined) => {
-    return fs.writeFile(path.resolve('./dist/index.template'), inlined, 'utf-8');
+    return fs.writeFile(path.resolve('./dist/html-dschau.template'), inlined, 'utf-8');
   })
   .then(() => {
     console.log('File written successfully');

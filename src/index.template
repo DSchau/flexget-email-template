@@ -32,11 +32,15 @@
   <title>Flexget Newsletter</title>
 <body>
   <div class="container">
+    {% if tv_shows|d(false) %}
+      <div class="show spacer">
+        <h3 class="message">The episodes you may have missed&hellip;</h3>
+      </div>
+    {% endif %}
     {% for show in tv_shows %}
       <section class="show content">
         <img src="{{show.tvdb_posters[0]}}">
-        <h1 class="title">{{show.tvdb_series_name|d(show.series_name)}}</h1>
-        <h2 class="ep_title">{{show.tvdb_ep_name}}</h2>
+        <h1 class="title">{{show.tvdb_ep_name}}</h1>
         <p class="description">{{show.tvdb_ep_overview}}</p>
       </section>
     {% endfor %} <!-- end shows -->

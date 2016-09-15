@@ -18,6 +18,9 @@ module.exports = function(file) {
         require('autoprefixer')
       ])
         .process(css)
-        .then((result) => result.css);
+        .then((result) => {
+          console.log(`.css from ${file} created`);
+          return result.css;
+        });
     });
 };
