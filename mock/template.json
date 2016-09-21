@@ -49,6 +49,55 @@
         "tvdb_episode": "3",
         "tvdb_ep_id": "S01E03",
         "tvdb_absolute_number": "3"
+      },
+      {
+        "series_name": "South Park",
+        "tvdb_series_name": "South Park",
+        "tvdb_url": "http://thetvdb.com/index.php?tab=series&id=313999",
+        "tvdb_rating": "9.7",
+        "tvdb_status": "Continuing",
+        "tvdb_runtime": "25",
+        "tvdb_first_air_date": "2016-09-06 00:00:00",
+        "tvdb_air_time": "10:00 PM",
+        "tvdb_content_rating": "TV-MA",
+        "tvdb_genres": [
+            "Comedy",
+            "Crime",
+            "Drama"
+        ],
+        "tvdb_network": "Comedy Central (US)",
+        "tvdb_banner": "http://thetvdb.com/banners/graphical/313999-g3.jpg",
+        "tvdb_fanart": "",
+        "tvdb_posters": [
+            "http://thetvdb.com/banners/posters/313999-1.jpg",
+            "http://thetvdb.com/banners/posters/313999-2.jpg"
+        ],
+        "tvdb_airs_day_of_week": "Tuesday",
+        "tvdb_actors": [
+            "Donald Glover",
+            "Keith Stanfield",
+            "Emmett Hunter",
+            "Brian Tyree Henry",
+            "Zazie",
+            "Beetz"
+        ],
+        "tvdb_language": "",
+        "imdb_url": "http://www.imdb.com/title/tt4288182",
+        "imdb_id": "tt4288182",
+        "zap2it_id": "EP02467334",
+        "tvdb_id": "313999",
+        "tvdb_ep_name": "Go for Broke",
+        "tvdb_ep_overview": "This man Earn broke as hell. How you gone go out on a date with no money? Umm mhmm these Atlanta dudes trifling. But Ok, Paper Boi might really be about that life tho.",
+        "tvdb_ep_directors": "Hiro Murai",
+        "tvdb_ep_writers": "",
+        "tvdb_ep_air_date": "2016-09-13 00:00:00",
+        "tvdb_ep_rating": "10",
+        "tvdb_ep_guest_stars": " ",
+        "tvdb_ep_image": "http://thetvdb.com/banners/episodes/313999/5684172.jpg",
+        "tvdb_season": "1",
+        "tvdb_episode": "3",
+        "tvdb_ep_id": "S01E03",
+        "tvdb_absolute_number": "3"
       }
     ]
   }

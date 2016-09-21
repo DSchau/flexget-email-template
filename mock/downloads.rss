@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>FlexGet</title><link>http://flexget.com</link><description>FlexGet generated RSS feed</description><lastBuildDate>Thu, 15 Sep 2016 01:00:04 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Atlanta - S01E03 [ 2016 ] [ MKV | H.264 | HDTV | 720p | Scene | FastTorrent ] [ Uploader: Anonymous ]  [ Atlanta.S01E03.720p.HDTV.x264-AVS ] (from broadcasthenet)</title><link>http://www.imdb.com/title/tt4288182</link><description>
-  
-  &lt;p&gt;Atlanta S01E03 Go for Broke&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Cast:&lt;/strong&gt; Donald Glover, Keith Stanfield, Emmett Hunter, Brian Tyree Henry, Zazie Beetz&lt;/p&gt;
-  
-  &lt;p&gt;&lt;strong&gt;Overview:&lt;/strong&gt; This man Earn broke as hell. How you gone go out on a date with no money? Umm mhmm these Atlanta dudes trifling. But Ok, Paper Boi might really be about that life tho.&lt;/p&gt;
+<rss version="2.0">
+  <channel>
+    <title>FlexGet</title>
+    <link>http://flexget.com</link>
+    <description>FlexGet generated RSS feed</description>
+    <lastBuildDate>Fri, 16 Sep 2016 16:00:04 GMT</lastBuildDate>
+    <generator>PyRSS2Gen-1.1.0</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
 
-  
-  &lt;p&gt;Atlanta S01E03 &lt;/p&gt;
-  
-  
+    <item>
+      <title>Atlanta - S01E03 [ 2016 ] [ MKV | H.264 | HDTV | 720p | Scene | FastTorrent ] [ Uploader: Anonymous ]  [ Atlanta.S01E03.720p.HDTV.x264-AVS ] (from broadcasthenet)
+      </title>
+      <link>http://www.imdb.com/title/tt4288182</link>
+      <description>
+        &lt;p&gt;Atlanta S01E03 Go for Broke&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Cast:&lt;/strong&gt; Donald Glover, Keith Stanfield, Emmett Hunter, Brian Tyree Henry, Zazie Beetz&lt;/p&gt;
+        
+        &lt;p&gt;&lt;strong&gt;Overview:&lt;/strong&gt; This man Earn broke as hell. How you gone go out on a date with no money? Umm mhmm these Atlanta dudes trifling. But Ok, Paper Boi might really be about that life tho.&lt;/p&gt;
 
-</description><guid isPermaLink="false">U9lKchHnW2rRfeijX1qp1-LqK14=</guid><pubDate>Wed, 14 Sep 2016 03:00:08 GMT</pubDate></item></channel></rss>
+        
+        &lt;p&gt;Atlanta S01E03 &lt;/p&gt;
+      </description>
+      <guid isPermaLink="false">U9lKchHnW2rRfeijX1qp1-LqK14=</guid>
+      <pubDate>Wed, 14 Sep 2016 03:00:08 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>South Park - S20E01 [ 2016 ] [ MKV | H.264 | WEBRip | 720p | Scene | FastTorrent ] [ Uploader: Anonymous ]  [ South.Park.S20E01.UNCENSORED.720p.WEB.h264-HatchetGear ] (from broadcasthenet)</title>
+      <link>http://www.imdb.com/title/tt0121955</link>
+      <description>
+        &lt;p&gt;South Park S20E01 Member Berries&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Cast:&lt;/strong&gt; Trey Parker, Matt Stone, Isaac Hayes, Eliza Schneider, Mona Marshall, Mary Kay Bergman, April Stewart, Adrien Beard, Jennifer Howell, Eric Stough, Matt Stone, Matt Stone (2), Trey Parker (2), Trey Parker, Trey Parker, Matt Stone (2)&lt;/p&gt;
+        
+        &lt;p&gt;&lt;strong&gt;Overview:&lt;/strong&gt; Mr. Garrison is still on the campaign trail as the National Anthem gets a reboot by an American Icon.&lt;/p&gt;
+
+        
+        &lt;p&gt;South Park S20E01 &lt;/p&gt;
+      </description>
+      <guid isPermaLink="false">1Sigc5gFQqygFfqQFNk8W2Gnppc=</guid>
+      <pubDate>Fri, 16 Sep 2016 09:00:06 GMT</pubDate>
+    </item>
+    <item>
+      <title>Mr. Robot - S02E11 [ 2016 ] [ MKV | H.264 | WEB-DL | 720p | FastTorrent | Internal ] [ Uploader: RobSquared ]  [ Mr.Robot.S02E11.ep2.9.pyth0n-pt1.p7z.720p.WEB-DL.DD5.1.H.264-NTb ] (from broadcasthenet)</title>
+      <link>http://www.imdb.com/title/tt4158110</link>
+      <description>
+        &lt;p&gt;Mr. Robot S02E11 eps2.9_pyth0n-pt1.p7z&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Cast:&lt;/strong&gt; Rami Malek, Christian Slater, Portia Doubleday, Carly Chaikin, Martin Wallström, Craig Robinson, Stephanie Corneliussen, Grace Gummer, Michael Cristofer&lt;/p&gt;
+        
+        &lt;p&gt;&lt;strong&gt;Overview:&lt;/strong&gt; Angela makes an acquaintance; Darlene realizes she is in too deep; an old friend reveals everything to Elliot.&lt;/p&gt;
+
+        
+        &lt;p&gt;Mr. Robot S02E11 &lt;/p&gt;
+      </description>
+      <guid isPermaLink="false">70Suwy4P0zHebz72BOdipLG_Gkc=</guid>
+      <pubDate>Thu, 15 Sep 2016 22:30:07 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

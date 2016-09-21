@@ -1,17 +1,56 @@
+$offset-margin: -40px;
+$background-color: mix(white, black, 30%);
+
 section {
   max-width: 95%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: ($offset-margin * -1);
+  padding: 5px 0;
   img {
     max-height: 200px;
     display: block;
     margin: 0 auto;
+    border-radius: 4px;
   }
   .title {
     margin: 0;
     padding: 0;
-    text-align: center;
+    margin-top: $offset-margin;
+    font-weight: 700;
+    width: 100%;
+    .year {
+      float: right;
+    }
   }
   .description {
     line-height: 24px;
+  }
+  hr {
+    position: relative;
+    top: 5px;
+    border: 0;
+    height: 2px;
+    background-color: rgba($background-color, 0.125);
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.shows {
+  padding-top: ($offset-margin * -1) + 10;
+}
+
+.episode {
+  .poster {
+    float: left;
+    margin-top: $offset-margin;
+    margin-right: 10px;
+  }
+  .details {
+    min-height: 160px;
+    border-top: 2px solid rgba($background-color, 0.25);
+    background: linear-gradient(rgba($background-color, 0.15), rgba($background-color, 0) 60%);
+    padding-bottom: 20px;
   }
 }

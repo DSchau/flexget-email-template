@@ -11,3 +11,20 @@ a[x-apple-data-detectors] {
   font-weight: inherit !important;
   line-height: inherit !important;
 }
+
+@media only screen and (min-width: 600px) {
+  .container {
+    max-width: 768px !important;
+    min-height: 100vh;
+  }
+  section {
+    width: 50%;
+    float: left;
+    .poster {
+      padding: 0 2px;
+    }
+    .details {
+      padding: 0 5px;
+    }
+  }
+}

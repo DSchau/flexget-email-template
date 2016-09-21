@@ -34,20 +34,39 @@
   <div class="container">
     {% if tv_shows|d(false) %}
       <div class="show spacer">
-        <h3 class="message">The episodes you may have missed&hellip;</h3>
+        <h3 class="message">Some episodes you may have missed&hellip;</h3>
       </div>
     {% endif %}
-    {% for show in tv_shows %}
-      <section class="show content">
-        <img src="{{show.tvdb_posters[0]}}">
-        <h1 class="title">{{show.tvdb_ep_name}}</h1>
-        <p class="description">{{show.tvdb_ep_overview}}</p>
-      </section>
-    {% endfor %} <!-- end shows -->
+    <div class="shows">
+      {% for show in tv_shows %}
+        {% set show_name = show.tvdb_series_name|d(show.series_name) %}
+        {% set first = loop.index == 1 %}
+        {% set last = loop.index == tv_shows|length %}
+        {% set even = loop.index % 2 == 0 %}
+        {# {% set last = loop.index == (tv_shows|length and tv_shows|length > 1) %} #}
+
+        <section class="episode {{ first and 'first' or ''}} {{ last and 'last' or 'not-last' }} {{ even and 'even' or 'odd' }}">
+          <div class="poster">
+            <img src="{{show.tvdb_posters[0]}}">
+          </div>
+          <div class="details">
+            <h1 class="title">{{show_name}}</h1>
+            {# <h2 class="year">({{show.tvdb_first_air_date|formatdate('%Y')}})</h2> #}
+            <h2 class="episode-title">{{show.tvdb_ep_name}}</h2>
+            <p class="description clear">{{show.tvdb_ep_overview}}</p>
+          </div>
+        </section>
+      {% endfor %} <!-- end shows -->
+    </div>
 
     {% for movie in movies %}
       <section class="movie content"></section>
     {% endfor %} <!-- end movies -->
+
+    <div class="footer">
+      {% set plural = tv_shows|length > 1 and '(s)' or '' %}
+      <h4>{{ tv_shows|length }} item{{plural}} downloaded</h4>
+    </div>
   </div>
 </body>
 </html>
