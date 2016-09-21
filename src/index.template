@@ -32,11 +32,11 @@
   <title>Flexget Newsletter</title>
 <body>
   <div class="container">
-    {% if tv_shows|d(false) %}
-      <div class="show spacer">
-        <h3 class="message">Some episodes you may have missed&hellip;</h3>
+    <div class="spacer">
+      <div class="vertical-center">
+        <h3 class="message">What you may have missed&hellip;</h3>
       </div>
-    {% endif %}
+    </div>
     <div class="shows">
       {% for show in tv_shows %}
         {% set show_name = show.tvdb_series_name|d(show.series_name) %}
@@ -63,7 +63,7 @@
       <section class="movie content"></section>
     {% endfor %} <!-- end movies -->
 
-    <div class="footer">
+    <div class="footer clear">
       {% set plural = tv_shows|length > 1 and '(s)' or '' %}
       <h4>{{ tv_shows|length }} item{{plural}} downloaded</h4>
     </div>

@@ -5,14 +5,20 @@ $background-color: mix(white, black, 30%);
   height: 150px;
   text-align: center;
   display: table;
-  background: linear-gradient(rgba(darken(blue, 40%), 0.8), rgba(darken(blue, 40%), 0.75) 60%);
+  background: #c2e59c;
+  background: linear-gradient(90deg, #c2e59c , #64b3f4);
   border-bottom: 2px solid white;
-  .message {
-    font-size: 24px;
+  .vertical-center {
     display: table-cell;
     vertical-align: middle;
-    line-height: 36px;
     margin-top: -20px;
+  }
+  .message {
+    font-size: 24px;
     color: white;
+    line-height: 36px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    margin: 0 auto;
   }
 }
