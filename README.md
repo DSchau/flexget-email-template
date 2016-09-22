@@ -10,5 +10,10 @@ A simple template intended to be used with the [email][flexget-email] plugin ava
 1. Configure an e-mail task in your config.yml, consider [my task][flexget-email-task]
  - Consider testing the task with `flexget execute --task taskname`
 
+## Preview
+
+![small template](assets/small.png)
+![large template](assets/large.png)
+
 [flexget-email]: http://flexget.com/Plugins/email
 [flexget-email-task]: https://github.com/DSchau/flexget-config/blob/master/config.yml#L94-L112
