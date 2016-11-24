@@ -11,6 +11,6 @@ browserSync.watch('src/**/*.scss', buildAndReload);
 
 function buildAndReload() {
   if ( browserSync.active ) {
-    exec('npm run preserve', browserSync.reload);
+    exec('npm run prestart', browserSync.reload);
   }
 }

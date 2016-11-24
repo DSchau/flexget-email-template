@@ -16,12 +16,20 @@ section {
   .title {
     margin: 0;
     padding: 0;
-    margin-top: $offset-margin;
+    position: relative;
+    top: $offset-margin;
+    margin-bottom: -10px;
     font-weight: 700;
-    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
     .year {
       float: right;
     }
+  }
+  .shift {
+    position: relative;
+    top: $offset-margin;
   }
   .description {
     line-height: 24px;
@@ -34,6 +42,12 @@ section {
     background-color: rgba($background-color, 0.125);
     display: block;
     margin: 0 auto;
+  }
+  .episode-rating {
+    font-size: 1rem;
+    .empty {
+      color: mix(black, white, 35%);
+    }
   }
 }
 
@@ -51,6 +65,7 @@ section {
     min-height: 160px;
     border-top: 2px solid rgba($background-color, 0.25);
     background: linear-gradient(rgba($background-color, 0.15), rgba($background-color, 0) 60%);
+    padding: 0 5px;
     padding-bottom: 20px;
   }
 }

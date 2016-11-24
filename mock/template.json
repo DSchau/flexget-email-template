@@ -42,7 +42,7 @@
         "tvdb_ep_directors": "Hiro Murai",
         "tvdb_ep_writers": "",
         "tvdb_ep_air_date": "2016-09-13 00:00:00",
-        "tvdb_ep_rating": "10",
+        "tvdb_ep_rating": "8",
         "tvdb_ep_guest_stars": " ",
         "tvdb_ep_image": "http://thetvdb.com/banners/episodes/313999/5684172.jpg",
         "tvdb_season": "1",
@@ -51,8 +51,8 @@
         "tvdb_absolute_number": "3"
       },
       {
-        "series_name": "South Park",
-        "tvdb_series_name": "South Park",
+        "series_name": "Fear the Walking Dead",
+        "tvdb_series_name": "Fear the Walking Dead",
         "tvdb_url": "http://thetvdb.com/index.php?tab=series&id=313999",
         "tvdb_rating": "9.7",
         "tvdb_status": "Continuing",

@@ -1,7 +1,20 @@
+$base-text-color: mix(white, black, 7.5%);
+
 h1, h2, h3, h4 {
-  color: #000000;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   margin: 0;
+}
+
+h1 {
+  color: $base-text-color;
+}
+
+h2 {
+  color: mix(white, $base-text-color, 12.5%);
+}
+
+h3 {
+  color: mix(white, $base-text-color, 15%);
 }
 
 h2, h3, h4 {
@@ -11,7 +24,6 @@ h2, h3, h4 {
 h1 {
   font-size: 35px;
   font-weight: 300;
-  text-transform: capitalize;
 }
 
 p, ul, ol {
@@ -19,6 +31,7 @@ p, ul, ol {
   font-size: 14px;
   font-weight: normal;
   margin: 0;
+  color: $base-text-color;
   Margin-bottom: 15px;
   li {
     list-style-position: inside;
